@@ -19,7 +19,6 @@ The predictor uses an ensemble of 10 Extra Trees Classifier models trained on an
 - **Source**: AIPpred database (http://www.thegleelab.org/AIPpred/)
 - **Positive samples**: Anti-inflammatory peptides (benchmarking and independent datasets)
 - **Negative samples**: Non-anti-inflammatory peptides
-- **Reference**: Gupta, S., et al. (2015). "In silico approach for predicting toxicity of peptides and proteins." PloS one, 10(12), e0143919. (AIPpred database paper)
 
 ### Performance
 Cross-validation performance (5-fold stratified CV, 5 repeats):
@@ -58,6 +57,8 @@ Python packages:
 - scikit-learn>=1.0.2
 - modlamp
 - biopython
+
+Pretrained model: https://zenodo.org/records/19596074
 
 ## Usage
 
@@ -131,25 +132,4 @@ Grid search was performed over:
 
 Total configurations evaluated: 150
 
-## Citation
 
-If you use this predictor, please cite:
-
-1. **AIPpred database**: Gupta, S., Kapoor, P., Chaudhary, K., Gautam, A., Kumar, R., & Raghava, G. P. (2015). In silico approach for predicting toxicity of peptides and proteins. PloS one, 10(12), e0143919.
-
-2. **Your publication** (to be added once published)
-
-## Contact
-
-For questions or issues, please contact: [Add your contact information]
-
-## License
-
-[Add license information]
-
-## Version History
-
-- v1.0 (2024): Initial release
-  - Ensemble of 10 Extra Trees models
-  - Trained on AIPpred database
-  - Cross-validation AUPR: 0.72
